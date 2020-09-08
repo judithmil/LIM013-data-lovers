@@ -18,8 +18,7 @@ const order = {
         }
         if (a.name < b.name) {
           return -1;
-        }
-        return 0;
+        }        return 0;
       });
 
       //console.log("result", result)
