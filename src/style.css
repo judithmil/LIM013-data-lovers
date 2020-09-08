@@ -84,7 +84,6 @@ video {
 }
 .logoHome {
   margin: 1rem 1rem 1rem 1rem;
-  /* width: 10%; */
   height: auto;
   top: 50%;
   position: relative;
@@ -92,7 +91,7 @@ video {
 }
 
 .imghome {
-  width: 70px;
+  width: 100%;
 }
 
 .imghome:hover {
@@ -100,9 +99,9 @@ video {
   box-shadow: inset 0 0 1.25rem #feb412, 0 0 1.25rem #feb412;
 }
 .cornerBar {
-  width: 100%;
+  width: 70%;
   padding: 0.3125rem;
-  margin: 2rem 3rem 2rem 1rem;
+  margin: 2rem 2rem 2rem 2rem;
   border: #a87e3e 0.09rem solid;
   border-radius: 1.875rem 0rem 1.875rem 0rem;
 }
@@ -130,7 +129,7 @@ video {
   color: #000000;
   text-decoration: none;
   line-height: 100%;
-  font-size: 250%;
+  font-size: 200%;
   font-weight: normal;
   font-family: "Marcellus SC", serif;
   font-style: normal;
@@ -167,7 +166,7 @@ video {
 .menu-play a {
   color: white;
   text-decoration: none;
-  font-size: 200%;
+  font-size: 190%;
   line-height: 89%;
   font-weight: normal;
   font-family: "Marcellus SC", serif;
@@ -175,8 +174,7 @@ video {
   height: 10%;
   text-align: center;
   padding: 6%;
-  text-shadow: 0.0625rem 0.0625rem 0.5rem #07cbe9, 0 0 1em #d6c772,
-    0 0 0.2em #07cbe9;
+  text-shadow: 0.0625rem 0.0625rem 0.5rem #07cbe9, 0 0 1em #d6c772, 0 0 0.2em #07cbe9;
 }
 .menu-play a:hover {
   text-shadow: 0.0625rem 0.0625rem 0.5rem black, 0 0 1em black, 0 0 0.2em black;
@@ -186,7 +184,7 @@ video {
 .home {
   display: flex;
   width: auto;
-  margin: 1rem 5rem 1rem 5rem;
+  margin: 1rem 3rem 1rem 3rem;
 }
 .child1 {
   width: 100%;
@@ -194,7 +192,7 @@ video {
 .container-box {
   background-color: rgba(10, 3, 3, 0.404);
   height: auto;
-  width: auto;
+  width: 100%;
   margin: 1rem 1rem 1rem 1rem;
   border: 5px inset #bba341;
   padding: 1rem 2rem 1rem 2rem;
@@ -208,7 +206,7 @@ video {
   width: 100%;
 }
 .container-box p {
-  font-size: 180%;
+  font-size: 140%;
   text-align: justify;
   color: #eada9d;
 }
@@ -216,7 +214,7 @@ video {
   color: #5fc2c9;
   text-decoration: none;
   letter-spacing: 0.25rem;
-  font-size: 200%;
+  font-size: 150%;
   margin: 0rem 0rem 0rem 0rem;
 }
 .container-box a:hover {
@@ -231,11 +229,10 @@ video {
 }
 .container-box h2 {
   padding: 1%;
-  font-size: 38px;
   text-align: center;
   color: #eada9d;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 200%;
 }
 .comunidad-nav {
   text-align: center;
@@ -247,7 +244,7 @@ video {
 /*Modo de juego y Video de LOL */
 .modos {
   margin: 1rem 1rem 1rem 7rem;
-  width: 260%;
+  width: 350%;
   position: relative;
 }
 
