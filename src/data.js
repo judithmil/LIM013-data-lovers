@@ -1,3 +1,4 @@
+
 //filtrado de data
 const filterChampions = (data, rol) => {
   const result = data.filter(
@@ -87,5 +88,7 @@ const stats = (num, data, statsLevel) => {
   }
 };
 export { filterChampions, orderAZ, orderZA, orderHigher, orderLower, stats };
+
+
 
 

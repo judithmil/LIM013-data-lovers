@@ -1,3 +1,4 @@
+
 import {
   filterChampions,
   orderAZ,
@@ -170,6 +171,7 @@ const getCampeones = (arrayCampeones) => {
 };
 
 getCampeones(arrayCampeones);
+
 
 /*filtrado de campeones*/
 filtradoCampeones.addEventListener("click", (event) => {

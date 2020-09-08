@@ -90,6 +90,7 @@ video {
   position: relative;
   vertical-align: middle;
 }
+
 .imghome {
   width: 70px;
 }
@@ -477,7 +478,7 @@ footer {
 }
 .left:hover {
   color: #eada9d;
-  text-shadow: 0.0625rem 0.0625rem 0.375rem #feb412;
+  text-shadow: 0.0625rem 0.0625rem 0.375rem #feb412
 }
 .redes {
   text-align: right;
@@ -559,42 +560,41 @@ footer {
   text-align: center;
   text-shadow: 0.325rem 0.0625rem 0.375rem #07e992d0;
 }
-.top5 {
+.top5{
   text-align: center;
   margin-left: 100px;
   color: #dfc981;
   font-size: 2.1875rem;
   padding: 0 0.3125rem 0 0.3125rem;
-  font-family: "Marcellus SC", serif;
+  font-family: 'Marcellus SC', serif;
 }
-.divisor2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -105px;
-}
-#emblema {
+.divisor2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-105px;
+  }
+#emblema{
   width: 100px;
   height: 100px;
-  margin-top: -20px;
+  margin-top:-20px;
 }
-.champion {
+.champion{
   color: #dfc981;
   padding-left: 5px;
   font-size: 3.125rem;
   padding: 0.1rem 0rem 0.1rem 0rem;
-  font-family: "Marcellus SC", serif;
+  font-family: 'Marcellus SC', serif;
 }
-.texto-top5 p {
+.texto-top5 p{
   color: #dfc981;
   font-size: 1.3rem;
   padding: 0.1rem 0rem 1rem 0rem;
-  font-family: "Marcellus SC", serif;
+  font-family: 'Marcellus SC', serif;
   text-align: center;
-  margin: auto;
+  margin:auto;
   max-width: 900px;
 }
-
 #topchampions {
   display: flex;
   flex-wrap: Wrap;
@@ -700,14 +700,14 @@ figure .traseraTop .post-title {
   color: #dfc981;
   font-size: 2.1875rem;
   padding: 0 0.3125rem 0 0.3125rem;
-  font-family: "Marcellus SC", serif;
+  font-family: 'Marcellus SC', serif;
 }
-
 .champion {
   color: #dfc981;
   padding-left: 5px;
   font-size: 3.125rem;
   padding: 0.1rem 0rem 0.1rem 0rem;
+
   font-family: "Marcellus SC", serif;
 }
 
@@ -738,7 +738,6 @@ figure .traseraTop .post-title {
   border: #a87e3e 0.09rem solid;
   border-radius: 1.875rem 0rem 1.875rem 0rem;
 }
-
 .buscador {
   top: 0rem;
   width: 100%;
@@ -754,7 +753,6 @@ figure .traseraTop .post-title {
   background-color: rgb(218, 213, 213);
   outline: none;
 }
-
 .line {
   height: 70%;
   align-self: center;
@@ -770,8 +768,7 @@ figure .traseraTop .post-title {
 }
 .all:hover {
   color: wheat;
-  text-shadow: 0.0625rem 0.0625rem 0.5rem #ab8347, 0 0 1em #ab8347,
-    0 0 0.2em #ab8347;
+  text-shadow: 0.0625rem 0.0625rem 0.5rem #ab8347, 0 0 1em #ab8347, 0 0 0.2em #ab8347;
 }
 
 #searchInput:hover {

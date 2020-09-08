@@ -5,10 +5,12 @@ const arrDataLolTotal = Object.values(data.data);
 const buttonfirstUser = document.getElementById("Top5"); //Constantes dentro del DOM
 const containerTopTeam = document.getElementById("topchampions");
 
+
 //función  para  top cinco//
 const getTopFive = (array) => {
   const newArray = [];
   for (let i = 0; i < array.length; i++) {
+
     newArray.push({
       name: array[i].name,
       title: array[i].title,
@@ -16,6 +18,7 @@ const getTopFive = (array) => {
       hp: array[i].stats.hp,
       info: array[i].info,
     });
+
   }
   const newArrayOrder = newArray.sort((a, b) => {
     if (a.hp < b.hp) {
@@ -27,10 +30,12 @@ const getTopFive = (array) => {
   return newArrayOrder.slice(0, 5);
 };
 
+
 const arrDataLolTopTeam = getTopFive(arrDataLolTotal);
 const showTopTeam = (array) => {
   for (let i = 0; i < array.length; i++) {
     containerTopTeam.innerHTML += ` 
+
         <div class="card-link">
           <figure>
           <div class="frontalCard">
@@ -52,3 +57,4 @@ const showTopTeam = (array) => {
 };
 
 buttonfirstUser.addEventListener("click", showTopTeam(arrDataLolTopTeam));
+
