@@ -762,6 +762,7 @@ figure .traseraTop .post-title {
   border: none;
   color: #ab8347;
   font-family: "Marcellus SC", serif;
+  outline: none;
 }
 .all:hover {
   color: wheat;
@@ -1627,8 +1628,9 @@ th {
   .orderDifficulty,
   #searchInput,
   #order {
-    font-size: 8pt;
+    font-size: 80%;
     text-align: center;
+    line-height: 150%;
   }
   .buscador,
   #filtradoCampeones,
@@ -1643,6 +1645,7 @@ th {
   }
   #searchInput {
     width: 70%;
+    font-size: 80%;
   }
   .orderClass {
     border-radius: 20px 0;
