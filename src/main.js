@@ -1,107 +1,335 @@
-import order from './data.js';
-import data from './data/lol/lol.js';
+
+import {
+  filterChampions,
+  orderAZ,
+  orderZA,
+  orderHigher,
+  orderLower,
+  stats,
+} from "./data.js";
+import data from "./data/lol/lol.js";
 
 const datos = data.data,
   filtradoCampeones = document.getElementById("filtradoCampeones"),
   arrayCampeones = Object.values(datos);
 
+const listaCampeones = (
+  name,
+  img,
+  title,
+  difficulty,
+  rol,
+  lore,
+  hp,
+  hpperlevel,
+  mp,
+  mpperlevel,
+  armor,
+  armorperlevel,
+  spellblock,
+  spellblockperlevel,
+  hpregen,
+  hpregenperlevel,
+  id
+) => {
+  const campeones = document.createElement("div") /* card-link-champ*/,
+    frontalcard = document.createElement("div"); /*"frontalCard*/
 
-const listaCampeones = (name, img, title, difficulty) => {
-  const campeones = document.createElement("div"),
-    splashCampeones = document.createElement("img"),
-    nameCampeones = document.createElement("div"),
-    titleCampeones = document.createElement("div"),
-    difficultyCampeones = document.createElement("div");
+  frontalcard.innerHTML += `    
+    <a class="blog-card" id="${id}" href=" #openmodal${id}">
+    
+    <img class="modal-img" src="${img}"/></a>
+    
+      
+      <h1 class="frontalTextChamp" id="fontname">${name}</h1>
+      <h2 class="frontalTextChamp" id="fonttitle">"${title}"</h2>
+      <p class="frontalTextChamp" id="fontdificultad">Dificultad: ${difficulty}</p>
+    
+   
+    <section id="openmodal${id}" class="modal-window">
+      <div class = "modal-content">
+        <a href="#${id}" title="Close" class="modal-close">X</a>
+        <div class="contentImg">
+        <img class="modal-img-back" src="${img}"/>
+        </div>
+        <div class="modal-back">
+          <h1>${name}</h1>
+          <h2>"${title}"</h2>
+          <p><strong class="strong">Lore</strong>:${lore}</p>
+        </div>
 
-    nameCampeones.innerHTML += name;
-    titleCampeones.innerHTML += `<p>"${title}"</p>`;
-    difficultyCampeones.innerHTML += `<p>Dificultad: "${difficulty}"</p>`;
-  campeones.setAttribute("class", "legends");
-  splashCampeones.setAttribute("class", "img-container");
-  splashCampeones.setAttribute("src", img);
-  nameCampeones.setAttribute("class", "name");
-  titleCampeones.setAttribute("class", "name");
-  difficultyCampeones.setAttribute("class", "difficulty");
+        <h2 class="frontalTextTable">Tabla de estadística por rango de nivel:</h2>
+        <table class="table">
+          <tr class="table">
+            <th class="table"> Stats</th>
+            <th class="table"> Per Level</th>
+            <th class="table"> Level 1</th>
+            <th class="table"> Level 6</th>
+            <th class="table"> Level 12</th>
+            <th class="table"> Level 18</th>
+          </tr>
+
+          <tr class="table">
+            <th class="table"> Hp </th>
+            <td class="table">${hp}</td>
+            <td class="table">${hpperlevel}</td>
+            <td class="table">${stats(6, arrayCampeones, 1)}</td>
+            <td class="table">${stats(12, arrayCampeones, 1)}</td>
+            <td class="table">${stats(18, arrayCampeones, 1)}</td>
+          </tr>
+            
+          <tr class="table">
+            <th class="table"> MP </th>
+            <td class="table">${mp}</td>
+            <td class="table">${mpperlevel}</td>
+            <td class="table">${stats(6, arrayCampeones, 2)}</td>
+            <td class="table">${stats(12, arrayCampeones, 2)}</td>
+            <td class="table">${stats(18, arrayCampeones, 2)}</td>        
+          </tr>
+
+          <tr class="table">
+            <th class="table"> Armor </th>
+            <td class="table">${armor}</td>
+            <td class="table">${armorperlevel}</td>
+            <td class="table">${stats(6, arrayCampeones, 3)}</td>
+            <td class="table">${stats(12, arrayCampeones, 3)}</td>
+            <td class="table">${stats(18, arrayCampeones, 3)}</td>
+          </tr>  
+          
+          <tr class="table">
+            <th class="table"> Spellblock </th>
+            <td class="table">${spellblock}</td>
+            <td class="table">${spellblockperlevel}</td>
+            <td class="table">${stats(6, arrayCampeones, 4)}</td>
+            <td class="table">${stats(12, arrayCampeones, 4)}</td>
+            <td class="table">${stats(18, arrayCampeones, 4)}</td>
+          </tr>
+            
+          <tr class="table">
+            <th class="table"> Hpregen </th>
+            <td class="table">${hpregen}</td>
+            <td class="table">${hpregenperlevel}</td>
+            <td class="table">${stats(6, arrayCampeones, 5)}</td>
+            <td class="table">${stats(12, arrayCampeones, 5)}</td>
+            <td class="table">${stats(18, arrayCampeones, 5)}</td>
+          </tr>
+        </table>
+        <h2 class="rolText">Roles: "${rol}"</h2>    
+      </div>       
+    </section>`;
+
+  campeones.setAttribute("class", "card-link-Champ");
+  frontalcard.setAttribute("class", "frontalCardChampion");
 
   document.getElementById("container-campeones").appendChild(campeones);
-  campeones.appendChild(splashCampeones);
-  campeones.appendChild(nameCampeones);
-  campeones.appendChild(titleCampeones);
-  campeones.appendChild(difficultyCampeones);
+
+  campeones.appendChild(frontalcard);
 };
 
-/*---TRAER DATA---*/
-const getCampeones = (objCampeones) => {
-  for (let i = 0; i < objCampeones.length; i++) {
-    let name = objCampeones[i].name;
-    let img = objCampeones[i].splash;
-    let title = objCampeones[i].title;
-    let difficulty = objCampeones[i].info.difficulty;
-    listaCampeones(name, img, title, difficulty);
+/*obtener array de campeones desde data*/
+const getCampeones = (arrayCampeones) => {
+  for (let i = 0; i < arrayCampeones.length; i++) {
+    let name = arrayCampeones[i].name;
+    let img = arrayCampeones[i].splash;
+    let title = arrayCampeones[i].title;
+    let difficulty = arrayCampeones[i].info.difficulty;
+    let id = arrayCampeones[i].id;
+
+    let rol = arrayCampeones[i].tags.join(", ");
+    let lore = arrayCampeones[i].blurb;
+    let hp = arrayCampeones[i].stats.hp;
+    let hpperlevel = arrayCampeones[i].stats.hpperlevel;
+    let mp = arrayCampeones[i].stats.mp;
+    let mpperlevel = arrayCampeones[i].stats.mpperlevel;
+    let armor = arrayCampeones[i].stats.armor;
+    let armorperlevel = arrayCampeones[i].stats.armorperlevel;
+    let spellblock = arrayCampeones[i].stats.spellblock;
+    let spellblockperlevel = arrayCampeones[i].stats.spellblockperlevel;
+    let hpregen = arrayCampeones[i].stats.hpregen;
+    let hpregenperlevel = arrayCampeones[i].stats.hpregenperlevel;
+
+    listaCampeones(
+      name,
+      img,
+      title,
+      difficulty,
+      rol,
+      lore,
+      hp,
+      hpperlevel,
+      mp,
+      mpperlevel,
+      armor,
+      armorperlevel,
+      spellblock,
+      spellblockperlevel,
+      hpregen,
+      hpregenperlevel,
+      id
+    );
   }
 };
 
 getCampeones(arrayCampeones);
 
 
-filtradoCampeones.addEventListener('click', (e) => {
-  const rol = e.target.id
+/*filtrado de campeones*/
+filtradoCampeones.addEventListener("click", (event) => {
+  const rol = event.target.id;
 
-  if (rol == null || rol == '' || rol == 'All') {
+  if (rol == null || rol == "" || rol == "All") {
+    document.getElementById("container-campeones").innerHTML = "";
     getCampeones(arrayCampeones);
   } else {
-    const result = order.filterChampions(arrayCampeones, rol)
-    document.getElementById('container-campeones').innerHTML = '';
-    getCampeones(result)
-  }
-})
-
-/*ORDER */
-const selector = document.querySelector("#order");
-selector.addEventListener("click", (event) => {
-  const orderName = event.target.value;
-  //console.log("prueba",e.target.value);
-  if (orderName == "asc") {
-    const prueba = order.orderAZ(arrayCampeones);
+    const result = filterChampions(arrayCampeones, rol);
     document.getElementById("container-campeones").innerHTML = "";
-    getCampeones(prueba)
-  } else if (orderName == "desc") {
-    const prueba = order.orderZA(arrayCampeones);
-    document.getElementById("container-campeones").innerHTML = "";
-    getCampeones(prueba)
+    getCampeones(result);
   }
 });
 
+/*order de los campeones*/
+const selector = document.querySelector("#order");
+selector.addEventListener("click", (event) => {
+  const orderName = event.target.value;
 
-const searchInput = document.querySelector('#searchInput'),
-  result = document.querySelector('#container-campeones');
+  if (orderName == "orderAZ") {
+    const alphabeticalAZ = orderAZ(arrayCampeones);
+    document.getElementById("container-campeones").innerHTML = "";
+    getCampeones(alphabeticalAZ);
+  } else if (orderName == "orderZA") {
+    const alphabeticalZA = orderZA(arrayCampeones);
+    document.getElementById("container-campeones").innerHTML = "";
+    getCampeones(alphabeticalZA);
+  }
+});
+
+/*Difficulty*/
+const selectDifficulty = document.querySelector("#orderDifficulty");
+selectDifficulty.addEventListener("click", (event) => {
+  const orderDifficulty = event.target.value;
+
+  if (orderDifficulty == "higher") {
+    const difficultyHigher = orderHigher(arrayCampeones);
+    document.getElementById("container-campeones").innerHTML = "";
+    getCampeones(difficultyHigher);
+  } else if (orderDifficulty == "lower") {
+    const difficultyLower = orderLower(arrayCampeones);
+    document.getElementById("container-campeones").innerHTML = "";
+    getCampeones(difficultyLower);
+  }
+});
+
+/*Buscar campeones*/
+const searchInput = document.querySelector("#searchInput"),
+  result = document.querySelector("#container-campeones");
 
 const buscador = () => {
-
-  result.innerHTML = '';
+  result.innerHTML = "";
   const texto = searchInput.value.toLowerCase();
 
   for (let campeones of arrayCampeones) {
-    let nombre = campeones.name.toLowerCase()
+    let nombre = campeones.name.toLowerCase();
     if (nombre.indexOf(texto) != -1) {
-
-      result.innerHTML +=
-        `<div class="legends">
-        <img class="img-container" src="${campeones.splash}" alt="">
-        <div class="name">${campeones.name}</div>
-        <div class="name">"${campeones.title}"</div>
-        <div class="difficulty">"${campeones.info.difficulty}"</div>
-      </div>`
+      result.innerHTML += `
+      <div class="card-link-Champ_Reverse">
+      <div class="frontalCardChampion_Reverse">
+        <a class="blog-card_Reverse" id="${campeones.id}" href=" #openmodal${
+        campeones.id
+      }"> 
+        <div class="contentImg_Reverse">
+          <img class="modal-img_Reverse" src="${campeones.splash}" />
+        </div>      
+          <h1 class="frontalTextChamp" id="fontname">${campeones.name}</h1>
+          <h2 class="frontalTextChamp" id="fonttitle">"${campeones.title}"</h2>
+          <p class="frontalTextChamp" id="fontdificultad">Dificultad: ${
+            campeones.info.difficulty
+          }</p>
+        </div>   
+        </a> 
+      </div>
+    </div>
+  
+  <section id="openmodal${campeones.id}" class="modal-window_Reverse">
+    <div class="modal-content_Reverse">
+      <a href= "#${
+        campeones.id
+      }" title="Close" class="modal-close_Reverse">X</a>
+      <div class="contentImg_Reserve">
+      <img class="modal-img-back_Reverse" src="${campeones.splash}"/>
+      </div>
+      <div class="modal-back_Reverse">
+        <h1>${campeones.name}</h1>
+        <h2>"${campeones.title}"</h2>
+        <p><strong class="strong_Reverse">Lore: </strong> ${campeones.blurb}</p>
+      </div>
+  
+      <h2 class="frontalTextTable_Reverse">Tabla de estadística por rango de nivel:</h2>
+      <table class="table_Reverse">
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> Stats</th>
+          <th class="table_Reverse"> Per Level</th>
+          <th class="table_Reverse"> Level 1</th>
+          <th class="table_Reverse"> Level 6</th>
+          <th class="table_Reverse"> Level 12</th>
+          <th class="table_Reverse"> Level 18</th>
+        </tr>
+  
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> Hp </th>
+          <td class="table_Reverse">${campeones.stats.hp}</td>
+          <td class="table_Reverse">${campeones.stats.hpperlevel}</td>
+          <td class="table_Reverse">${stats(6, arrayCampeones, 1)}</td>
+          <td class="table_Reverse">${stats(12, arrayCampeones, 1)}</td>
+          <td class="table_Reverse">${stats(18, arrayCampeones, 1)}</td>
+        </tr>
+  
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> MP </th>
+          <td class="table_Reverse">${campeones.stats.mp}</td>
+          <td class="table_Reverse">${campeones.stats.mpperlevel}</td>
+          <td class="table_Reverse">${stats(6, arrayCampeones, 2)}</td>
+          <td class="table_Reverse">${stats(12, arrayCampeones, 2)}</td>
+          <td class="table_Reverse">${stats(18, arrayCampeones, 2)}</td>
+        </tr>
+  
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> Armor </th>
+          <td class="table_Reverse">${campeones.stats.armor}</td>
+          <td class="table_Reverse">${campeones.stats.armorperlevel}</td>
+          <td class="table_Reverse">${stats(6, arrayCampeones, 3)}</td>
+          <td class="table_Reverse">${stats(12, arrayCampeones, 3)}</td>
+          <td class="table_Reverse">${stats(18, arrayCampeones, 3)}</td>
+        </tr>
+  
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> Spellblock </th>
+          <td class="table_Reverse">${campeones.stats.spellblock}</td>
+          <td class="table_Reverse">${campeones.stats.spellblockperlevel}</td>
+          <td class="table_Reverse">${stats(6, arrayCampeones, 4)}</td>
+          <td class="table_Reverse">${stats(12, arrayCampeones, 4)}</td>
+          <td class="table_Reverse">${stats(18, arrayCampeones, 4)}</td>
+        </tr>
+  
+        <tr class="table_Reverse">
+          <th class="table_Reverse"> Hpregen </th>
+          <td class="table_Reverse">${campeones.stats.hpregen}</td>
+          <td class="table_Reverse">${campeones.stats.hpregenperlevel}</td>
+          <td class="table_Reverse">${stats(6, arrayCampeones, 5)}</td>
+          <td class="table_Reverse">${stats(12, arrayCampeones, 5)}</td>
+          <td class="table_Reverse">${stats(18, arrayCampeones, 5)}</td>
+        </tr>    
+      </table>
+      <h2 class="rolText_Reverse">Rol: ${campeones.tags.join(", ")}</h2>
+    </div>
+  </section>`;
     }
   }
 
-  if (result.innerHTML == '') {
-    result.innerHTML +=
-      `<div class="legends">
-      <img class="img-container" src="./imagenes/notFound.gif" alt="">
-      <div class="name">Not Found</div>
-    </div>`
+  if (result.innerHTML == "") {
+    result.innerHTML += `<div class="frontalCardChampion">
+    <div class="Nofound"><p> No existe <br> <img src="./img/nofound.gif"></p></div>
+  </div>`;
   }
-}
+};
 
-searchInput.addEventListener('keyup', buscador)
+searchInput.addEventListener("keyup", buscador);
