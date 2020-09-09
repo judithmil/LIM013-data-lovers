@@ -25,7 +25,7 @@ Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y enc
 ## Organización del Trabajo (planificación): (icono calendario)
  Para realizar nuestra planificación utilizamos _JIRA_  en donde estructuramos bien las tareas para cada historias de usuario y en cuantos springs lo entregariamos.
 
- ![out] (https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
+ ![out](https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
 
 ## Entrevista y encuestas a usuarios:
 Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
