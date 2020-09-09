@@ -33,6 +33,7 @@ Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
  - Tuvo una duración de 20 a 30 minutos.
 
 **Preguntas** 
+
     -   ¿Cuéntanos a que te dedicas?
     -   ¿Qué haces en tus tiempos libres?
     -   ¿Cómo supiste de éste juego? 
@@ -46,11 +47,13 @@ Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
     -   ¿Qué es lo que más buscas en estos sitios web?
 
 **Entrevistado:** Alfonzo Gutierrez
+
     -   Edad: 18 años
     -   ocupación: Estudiante
     -   Medio de entrevista: Discord.
     -   Evidencia: Grabación de entrevista.
-Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a jugarlo gracias a la publicidad de youtube y por algunos amigos. Durante la entrevista el usuario nos comento que existen muchos campeones que se pueden usar en el juego. La diversidad campeones hace complicado para un jugador principiante el poder reconocerlos y asociarlos con sus roles, habilidades, dificultad, etc. Si pudiese visualizar la información de los héroes como sus nombres, imágenes e información extra como estadisticas los puntos de vida y de maná de cada campeón por niveles, le facilitaría a desarrollarse mejor en el juego.
+
+Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a jugarlo gracias a la publicidad de youtube y por algunos amigos. Durante la entrevista el usuario nos comentó que existen muchos campeones que se pueden usar en el juego. La diversidad campeones hace complicado para un jugador principiante el poder reconocerlos y asociarlos con sus roles, habilidades, dificultad, etc. Si pudiese visualizar la información de los héroes como sus nombres, imágenes e información extra como estadísticas los puntos de vida y de maná de cada campeón por niveles, le facilitaría a desarrollarse mejor en el juego.
 
 ## Historias de Usuario:
 Después de evaluar la información que nos brindo los usuarios, creamos las historias de usuario priorizando sus necesidades.
@@ -67,7 +70,7 @@ Para la construcción de las historias de usuario, se consideró las respuestas 
 ![partidas](img_readme/respuestas.png)
 
 ## Problema a solucionar:
-Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo especifico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
+Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo específico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
 
 ## Objetivos:
 Teniendo la data, nuestra idea de producto es lograr que el usuario conozca a los campeones de League of Leyends de una forma más práctica y sencilla.
@@ -75,7 +78,7 @@ Teniendo la data, nuestra idea de producto es lograr que el usuario conozca a lo
     -   Los filtros sean intuitivos para el usuario y cumplan sus requerimientos.
 
 ## Arquetipo:
-Realizamos un arquetipo de un usuario en el cual nos vamos a basar, poniendo sus preferencias y espectativas.
+Realizamos un arquetipo de un usuario en el cual nos vamos a basar, poniendo sus preferencias y expectativas.
 ![Arquetipo](img_readme/Arquetipo.png)
 
 
