@@ -54,6 +54,7 @@ Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a
 
 ## Historias de Usuario:
 Después de evaluar la información que nos brindo los usuarios, creamos las historias de usuario priorizando sus necesidades.
+
 ![historia_de_ususario](img_readme/historia_de_ususario.png)
 
 Para la construcción de las historias de usuario, se consideró las respuestas más representativas de los usuarios entrevistados: 
