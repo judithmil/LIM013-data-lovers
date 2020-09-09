@@ -1,68 +1,94 @@
-const filterData = (data, roles) => {
-  const arrLolD = data.filter((champ) => {
-    let champRol = [];
-    roles.forEach((rol) => {
-      if (rol.tags.includes(rol)) {
-        champRol.push(true);
-      } else {
-        champRol.push(false);
+//filtrado de data
+const filterChampions = (data, rol) => {
+  const result = data.filter(
+    (objCampeones) => {
+      return objCampeones.tags.includes(rol);
+    }
+  )
+  return result;
+};
+//ordenar alfabetico AZ
+const orderAZ = (data) => {
+  const result =
+    data.sort((a, b) => {
+      if (a.name > b.name) {
+        return 1;
+      }
+      else if (a.name < b.name) {
+        return -1;
+      }
+      else {
+        return 0;
       }
     });
-    if (champRol.includes(false)) {
-      return false;
+  return result;
+};
+//ordenar alfabetico ZA
+const orderZA = (data) => {
+  const result =
+    data.sort((b, a) => {
+      if (a.name > b.name) {
+        return 1;
+      }
+      else if (a.name < b.name) {
+        return -1;
+       
+      } else {
+        return 0;
+      }
+    });
+  return result;
+};
+//ordenar por dificultad de ascendente 
+const orderHigher = (data) => {
+  const result =
+    data.sort((a, b) => {
+      if (a.info.difficulty > b.info.difficulty) {
+        return 1;
+      }
+      else if (a.info.difficulty < b.info.difficulty) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+  return result;
+};
+//ordenar por dificultad de descendente
+const orderLower = (data) => {
+  const result =
+    data.sort((b, a) => {
+      if (a.info.difficulty > b.info.difficulty) {
+        return 1
+      }
+      else if (a.info.difficulty < b.info.difficulty) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+  return result;
+};
+//aplicación estadística
+const stats = (num, data, statsLevel) => {
+  for (let i = 0; i < data.length; i++) {
+    if (statsLevel === 1) {
+      return (parseFloat(data[i].stats.hp) + (parseFloat(data[i].stats.hpperlevel) * num)).toFixed(1);
+    } else if (statsLevel === 2) {
+      return (parseFloat(data[i].stats.mp) + (parseFloat(data[i].stats.mpperlevel) * num)).toFixed(1);
+    } else if (statsLevel === 3) {
+      return (parseFloat(data[i].stats.armor) + (parseFloat(data[i].stats.armorperlevel) * num)).toFixed(1);
+    } else if (statsLevel === 4) {
+      return (parseFloat(data[i].stats.spellblock) + (parseFloat(data[i].stats.spellblockperlevel) * num)).toFixed(1);
+    } else if (statsLevel === 5) {
+      return (parseFloat(data[i].stats.hpregen) + (parseFloat(data[i].stats.hpregenperlevel) * num)).toFixed(1);
     } else {
-      return champ;
-    }
-  });
-  return arrLolD;
-};
-
-const sortData = (data, sortByrol, sortOrder) => {
-  let arraySort = [];
-  for (let i = 0; i < data.lenght; i++) {
-    arraySort.push(Object.assign({}, data[i]));
-  }
-  if (sortByrol === 0) {
-    arraySort.sort((a, b) => {
-      if (sortOrder === 0) {
-        if (a > b) {
-          return 1;
-        } else {
-          return -1;
-        }
-      }
-    });
-  } else {
-    arraySort.sort((a, b) => {
-      if (sortOrder === 0) {
-        return a.info.dificulty - b.info.dificulty;
-      } else {
-        return b.info.dificulty - a.info.dificulty;
-      }
-    });
-  }
-  return arraySort;
-};
-
-// const computeStats = (data, num) => {
-// TODO falta Función Estadística
-
-// Buscador
-const searchDataFunction = (data, dataBusqueda) => {
-  let dataLol = []; 
-  let arrayBusqueda = [];
-  let newArrayBusqueda = [];
-
-  for (let i = 0; i < data.length; i++)
-  dataLol.push(Object.assign({}, data[i]));
-
-  for (let i = 0; i < dataLol.length; i++) {
-    arrayBusqueda.push(dataLol[i].name.toLowerCase());
-    if (arrayBusqueda[i].indexOf(dataBusqueda.toLowerCase()) !== -1) {
-      newArrayBusqueda.push(dataLol[i]);
+      return 0;
     }
   }
-  return newArrayBusqueda;
 };
+export { filterChampions, orderAZ, orderZA, orderHigher, orderLower, stats };
 
-export { filterData, sortData, searchDataFunction};
+
+
+
