@@ -18,7 +18,7 @@ En este proyecto: **Data Lovers** seleccionamos el tema League of Leguends, es u
 Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y encuestas para poder analizar las necesidades de los ususarios; luego realizamos prototipos de _baja_ y _alta_ fidelidad, para poder iterar con los usuarios y poder evaluar y priorizar los datos necesarios para solucionar sus necesidades. Construimos una interfaz :woman_technologist: que le va ayudar a interactuar y entender mejor esos datos. Nuestra página web permitirá visualizar los datos, tener un _top 5 de campeones_, _buscar_, _filtrar_ los datos de los campeones y _ordenarlos_.
 
 ## 3. Investigación UX :pencil:
-![historia_de_ususario](imagenes_readme/metodologia%ux.png)
+![historia_de_ususario](img_readme/metodologia%ux.png)
 
 :shipit: :mag_right: Los usuarios a los que este proyecto va dirigido son aquellos jugadores de videojuegos (gamers) o personas que se inician en el mundo de "League of Legends" y quieren conocer más de los campeones. Nuestra interfaz permitirá visualizar la data, filtrarla, ordenarla.
 
@@ -53,7 +53,7 @@ Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a
 
 ## Historias de Usuario:
 Después de evaluar la información que nos brindo los usuarios, creamos las historias de usuario priorizando sus necesidades.
-![historia_de_ususario](imagenes_readme/historia%de%ususario.png)
+![historia_de_ususario](img_readme/historia%de%ususario.png)
 
 ## Problema a solucionar:
 Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo especifico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
@@ -65,30 +65,30 @@ Teniendo la data, nuestra idea de producto es lograr que el usuario conozca a lo
 
 ## Arquetipo:
 Realizamos un arquetipo de un usuario en el cual nos vamos a basar, poniendo sus preferencias y espectativas.
-![Arquetipo](imagenes_readme/Arquetipo.png)
+![Arquetipo](img_readme/Arquetipo.png)
 
 
 ## USERFLOW (Flujo de ususario):
-![Userflow](imagenes_readme/Userflow.png)
+![Userflow](img_readme/Userflow.png)
 
 ## **Sketch** (Prototipo de baja fidelidad:
-![Prototipo_baja_fidelidad](imagenes_readme/img_20200813_195939.jpg)
-![Prototipo_baja_fidelidad](imagenes_readme/img_20200813_200104.jpg)
-![Prototipo_baja_fidelidad](imagenes_readme/img_20200813_200227.jpg)
+![Prototipo_baja_fidelidad](img_readme/img_20200813_195939.jpg)
+![Prototipo_baja_fidelidad](img_readme/img_20200813_200104.jpg)
+![Prototipo_baja_fidelidad](img_readme/img_20200813_200227.jpg)
 
 ## **Diseño de la Interfaz de Usuario** (Prototipo de alta fidelidad):
 
-![Prototipo_alta_fidelidad](imagenes_readme/protipoMobilModal.jpg)
-![Prototipo_alta_fidelidad](imagenes_readme/protipoMobiltop.jpg)
-![Prototipo_alta_fidelidad](imagenes_readme/prototipoMobil.jpg)
-![Prototipo_alta_fidelidad](imagenes_readme/prototipoMobilCampeones.jpg)
+![Prototipo_alta_fidelidad](img_readme/protipoMobilModal.jpg)
+![Prototipo_alta_fidelidad](img_readmeprotipoMobiltop.jpg)
+![Prototipo_alta_fidelidad](img_readme/prototipoMobil.jpg)
+![Prototipo_alta_fidelidad](img_readme/prototipoMobilCampeones.jpg)
 
 Utilizamos este flujo de usuario con el protitipo creado en Figma para iterar con los usuarios:
 :iphone: https://www.figma.com/proto/BW0TVaEPCqrkHV9SC3K2Xb/LOL?node-id=4%3A1&scaling=scale-down
 
 La paleta de colores aplicada fue la siguiente: 
 
-![Paleta_de_colores](imagenes_readme/paleta_de_colores_lol.jpg)
+![Paleta_de_colores](img_readme/paleta_de_colores_lol.jpg)
 
 ## Resultados del test de usabilidad: 
 • El flujo fue entendible para los usuarios.
