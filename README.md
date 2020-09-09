@@ -72,14 +72,14 @@ Realizamos un arquetipo de un usuario en el cual nos vamos a basar, poniendo sus
 ![Userflow](img_readme/Userflow.png)
 
 ## **Sketch** (Prototipo de baja fidelidad:
-![Prototipo_baja_fidelidad](img_readme/img_20200813_195939.jpg)
+![Prototipo_baja_fidelidad](img_readme/img_20200813_195939.jpg) 
 ![Prototipo_baja_fidelidad](img_readme/img_20200813_200104.jpg)
 ![Prototipo_baja_fidelidad](img_readme/img_20200813_200227.jpg)
 
 ## **Diseño de la Interfaz de Usuario** (Prototipo de alta fidelidad):
 
 ![Prototipo_alta_fidelidad](img_readme/protipoMobilModal.jpg)
-![Prototipo_alta_fidelidad](img_readmeprotipoMobiltop.jpg)
+![Prototipo_alta_fidelidad](img_readme/protipoMobiltop.jpg)
 ![Prototipo_alta_fidelidad](img_readme/prototipoMobil.jpg)
 ![Prototipo_alta_fidelidad](img_readme/prototipoMobilCampeones.jpg)
 
