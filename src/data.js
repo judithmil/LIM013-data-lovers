@@ -15,7 +15,7 @@ const orderAZ = (data) => {
       if (a.name > b.name) {
         return 1;
       }
-      if (a.name < b.name) {
+      else if (a.name < b.name) {
         return -1;
       }
       else {
@@ -31,7 +31,7 @@ const orderZA = (data) => {
       if (a.name > b.name) {
         return 1;
       }
-      if (a.name < b.name) {
+      else if (a.name < b.name) {
         return -1;
       } else {
         return 0;
@@ -46,7 +46,7 @@ const orderHigher = (data) => {
       if (a.info.difficulty > b.info.difficulty) {
         return 1;
       }
-      if (a.info.difficulty < b.info.difficulty) {
+      else if (a.info.difficulty < b.info.difficulty) {
         return -1;
       } else {
         return 0;
@@ -61,7 +61,7 @@ const orderLower = (data) => {
       if (a.info.difficulty > b.info.difficulty) {
         return 1
       }
-      if (a.info.difficulty < b.info.difficulty) {
+      else if (a.info.difficulty < b.info.difficulty) {
         return -1;
       } else {
         return 0;
