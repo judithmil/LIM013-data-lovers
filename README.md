@@ -24,7 +24,8 @@ Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y enc
 
 ## Organización del Trabajo (planificación): (icono calendario)
  Para realizar nuestra planificación utilizamos _JIRA_  en donde estructuramos bien las tareas para cada historias de usuario y en cuantos springs lo entregariamos.
- ![out](https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
+
+ (https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
 
 ## Entrevista y encuestas a usuarios:
 Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
@@ -54,6 +55,24 @@ Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a
 ## Historias de Usuario:
 Después de evaluar la información que nos brindo los usuarios, creamos las historias de usuario priorizando sus necesidades.
 ![historia_de_ususario](img_readme/historia_de_ususario.png)
+
+Para la construcción de las historias de usuario, se consideró las respuestas más representativas de los usuarios entrevistados: 
+
+El 53,3% jugaba partidas de tipo Normal:
+
+![partidas](img_readme/partidas.png)
+
+El 80% llevaba jugando LoL menos de 1 año:
+
+![tiempo_juego](img_readme/tiempo_juego.png)
+
+El 38.5% tenía mayor interés en buscas estadística de los campeones de LoL:
+
+![interes](img_readme/interes.png)
+
+El 60% estaba interesado en conocer el Lore de los campeones:
+
+![lore](img_readme/lore.png)
 
 ## Problema a solucionar:
 Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo especifico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
