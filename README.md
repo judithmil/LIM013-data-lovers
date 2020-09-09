@@ -58,21 +58,12 @@ Después de evaluar la información que nos brindo los usuarios, creamos las his
 
 Para la construcción de las historias de usuario, se consideró las respuestas más representativas de los usuarios entrevistados: 
 
-El 53,3% jugaba partidas de tipo Normal:
+•	El 53,3% jugaba partidas de tipo Normal
+•	El 80% llevaba jugando LoL menos de 1 año
+•	El 38.5% tenía mayor interés en buscas estadística de los campeones de LoL
+•	El 60% estaba interesado en conocer el Lore de los campeones
 
 ![partidas](img_readme/respuestas.png)
-
-El 80% llevaba jugando LoL menos de 1 año:
-
-![tiempo_juego](img_readme/tiempo_juego.png)
-
-El 38.5% tenía mayor interés en buscas estadística de los campeones de LoL:
-
-![interes](img_readme/interes.png)
-
-El 60% estaba interesado en conocer el Lore de los campeones:
-
-![lore](img_readme/lore.png)
 
 ## Problema a solucionar:
 Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo especifico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
