@@ -1,4 +1,3 @@
-
 //filtrado de data
 const filterChampions = (data, rol) => {
   const result = data.filter(
@@ -33,6 +32,7 @@ const orderZA = (data) => {
       }
       else if (a.name < b.name) {
         return -1;
+       
       } else {
         return 0;
       }
