@@ -18,7 +18,7 @@ En este proyecto: **Data Lovers** seleccionamos el tema League of Leguends, es u
 Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y encuestas para poder analizar las necesidades de los ususarios; luego realizamos prototipos de _baja_ y _alta_ fidelidad, para poder iterar con los usuarios y poder evaluar y priorizar los datos necesarios para solucionar sus necesidades. Construimos una interfaz :woman_technologist: que le va ayudar a interactuar y entender mejor esos datos. Nuestra página web permitirá visualizar los datos, tener un _top 5 de campeones_, _buscar_, _filtrar_ los datos de los campeones y _ordenarlos_.
 
 ## 3. Investigación UX :pencil:
-![historia_de_ususario](img_readme/metodologia%ux.png)
+![metodologia_ux](img_readme/metodologia_ux.png)
 
 :shipit: :mag_right: Los usuarios a los que este proyecto va dirigido son aquellos jugadores de videojuegos (gamers) o personas que se inician en el mundo de "League of Legends" y quieren conocer más de los campeones. Nuestra interfaz permitirá visualizar la data, filtrarla, ordenarla.
 
@@ -91,7 +91,7 @@ La paleta de colores aplicada fue la siguiente:
 ![Paleta_de_colores](img_readme/paleta_de_colores_lol.jpg)
 
 De igual manera, se utilizo la app Zepplin, para organizar los elementos de diseño: 
- ![out] (https://zpl.io/a7MXqGR)
+ (https://zpl.io/a7MXqGR)
 
 ## Resultados del test de usabilidad: 
 • El flujo fue entendible para los usuarios.
