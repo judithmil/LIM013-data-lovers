@@ -71,8 +71,8 @@ Existen demasiadas páginas con gran magintud de data, que puede abrumar al usua
 
 ## Objetivos:
 Teniendo la data, nuestra idea de producto es lograr que el usuario conozca a los campeones de League of Leyends de una forma más práctica y sencilla.
-•	Que sea una interfaz amigable e intuitiva para el usuario.
-• Los filtros sean intuitivos para el usuario y cumplan sus requerimientos.
+    -   Que sea una interfaz amigable e intuitiva para el usuario.
+    -   Los filtros sean intuitivos para el usuario y cumplan sus requerimientos.
 
 ## Arquetipo:
 Realizamos un arquetipo de un usuario en el cual nos vamos a basar, poniendo sus preferencias y espectativas.
@@ -105,9 +105,9 @@ De igual manera, se utilizo la app Zepplin, para organizar los elementos de dise
  (https://zpl.io/a7MXqGR)
 
 ## Resultados del test de usabilidad: 
-• El flujo fue entendible para los usuarios.
-• En la pagina de inicio poner la descripción de LOL, más corta y precisa.
-• Colocar el menú con los colores que se relacionen con el juego.
-• Colocar los filtros visibles y entendibles.
-• Colocar las imagenes de los campeones no tan grandes. 
-• Los usuarios sugieren que pongamos un vídeo instructivo sobre el juego.
+    -   El flujo fue entendible para los usuarios.
+    -   En la pagina de inicio poner la descripción de LOL, más corta y precisa.
+    -   Colocar el menú con los colores que se relacionen con el juego.
+    -   Colocar los filtros visibles y entendibles.
+    -   Colocar las imagenes de los campeones no tan grandes. 
+    -   Los usuarios sugieren que pongamos un vídeo instructivo sobre el juego.
