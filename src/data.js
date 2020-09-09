@@ -1,4 +1,3 @@
-// estas funciones son de ejemplo
 const filterData = (data, roles) => {
   const arrLolD = data.filter((champ) => {
     let champRol = [];

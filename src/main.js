@@ -1,12 +1,11 @@
 import data from "./data/lol/lol.js";
-import { filterData, sortData, searchDataFunction } from "./data.js";
 
 /*--cargar la data--*/
 const objData = data.data;
 const arrayData = Object.values(objData);
 containerOfAllFunctions(arrayData);
 
-const sortKind = document.getElementById("options");
+const sortKind = document.getElementById("menu");
 const inputSearch = document.getElementById("searchInputs");
 const searchbtton = document.getElementById("lupa");
 const arrayTag = Object.values(document.getElementsByClassName("fil-champ"));
@@ -22,7 +21,7 @@ function containerOfAllFunctions(arrayChamp) {
     }
     for (let index = 0; index < newArrayChamp.length; index++) {
       contend.push(`
-      <div class ="card-link">
+      <div class ="card-champs">
         <a class="blog-card" id="${
           newArrayChamp[index].id
         }" href="#openmodal${index}">
