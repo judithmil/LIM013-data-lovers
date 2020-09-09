@@ -22,7 +22,7 @@ Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y enc
 
 :shipit: :mag_right: Los usuarios a los que este proyecto va dirigido son aquellos jugadores de videojuegos (gamers) o personas que se inician en el mundo de "League of Legends" y quieren conocer más de los campeones. Nuestra interfaz permitirá visualizar la data, filtrarla, ordenarla.
 
-## Organización del Trabajo (planificación): (icono calendario)
+## Organización del Trabajo (planificación): 
  Para realizar nuestra planificación utilizamos _JIRA_  en donde estructuramos bien las tareas para cada historias de usuario y en cuantos springs lo entregariamos.
 
  ![out](https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
@@ -33,23 +33,23 @@ Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
  - Tuvo una duración de 20 a 30 minutos.
 
 **Preguntas** 
-•	¿Cuéntanos a que te dedicas?
-•	¿Qué haces en tus tiempos libres?
-•	¿Cómo supiste de éste juego? 
-•	¿Cuánto tiempo vas jugando LOL?
-•	¿Qué es lo que más te llama la atención del juego?
-•	¿Cuántas horas a la semana puedes llegar a jugar?
-•	¿Qué tipo de partidas juegas más?
-•	¿Perteneces a alguna o varias comunidades de LOL? ¿Cuáles? 
-•	¿Te interesaría saber del lore de cada campeón o un top?
-•	¿Tienes sitios web donde buscar información sobre LOL? ¿Cuáles son?
-•	¿Qué es lo que más buscas en estos sitios web?
+    -   ¿Cuéntanos a que te dedicas?
+    -   ¿Qué haces en tus tiempos libres?
+    -   ¿Cómo supiste de éste juego? 
+    -   ¿Cuánto tiempo vas jugando LOL?
+    -   ¿Qué es lo que más te llama la atención del juego?
+    -   ¿Cuántas horas a la semana puedes llegar a jugar?
+    -   ¿Qué tipo de partidas juegas más?
+    -   ¿Perteneces a alguna o varias comunidades de LOL? ¿Cuáles? 
+    -   ¿Te interesaría saber del lore de cada campeón o un top?
+    -   ¿Tienes sitios web donde buscar información sobre LOL? ¿Cuáles son?
+    -   ¿Qué es lo que más buscas en estos sitios web?
 
 **Entrevistado:** Alfonzo Gutierrez
-•	Edad: 18 años
-•	ocupación: Estudiante
-•	Medio de entrevista: Discord.
-•	Evidencia: Grabación de entrevista.
+    -   Edad: 18 años
+    -   ocupación: Estudiante
+    -   Medio de entrevista: Discord.
+    -   Evidencia: Grabación de entrevista.
 Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a jugarlo gracias a la publicidad de youtube y por algunos amigos. Durante la entrevista el usuario nos comento que existen muchos campeones que se pueden usar en el juego. La diversidad campeones hace complicado para un jugador principiante el poder reconocerlos y asociarlos con sus roles, habilidades, dificultad, etc. Si pudiese visualizar la información de los héroes como sus nombres, imágenes e información extra como estadisticas los puntos de vida y de maná de cada campeón por niveles, le facilitaría a desarrollarse mejor en el juego.
 
 ## Historias de Usuario:
@@ -59,10 +59,10 @@ Después de evaluar la información que nos brindo los usuarios, creamos las his
 
 Para la construcción de las historias de usuario, se consideró las respuestas más representativas de los usuarios entrevistados: 
 
-•	El 53,3% jugaba partidas de tipo Normal
-•	El 80% llevaba jugando LoL menos de 1 año
-•	El 38.5% tenía mayor interés en buscas estadística de los campeones de LoL
-•	El 60% estaba interesado en conocer el Lore de los campeones
+    -   El 53,3% jugaba partidas de tipo Normal
+    -   El 80% llevaba jugando LoL menos de 1 año
+    -   El 38.5% tenía mayor interés en buscas estadística de los campeones de LoL
+    -   El 60% estaba interesado en conocer el Lore de los campeones
 
 ![partidas](img_readme/respuestas.png)
 
