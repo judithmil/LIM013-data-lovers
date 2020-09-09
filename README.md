@@ -53,7 +53,7 @@ Nuestro entrevistado es un jugador principiante de League of Legends, comenzó a
 
 ## Historias de Usuario:
 Después de evaluar la información que nos brindo los usuarios, creamos las historias de usuario priorizando sus necesidades.
-![historia_de_ususario](img_readme/historia%de%ususario.png)
+![historia_de_ususario](img_readme/historia_de_ususario.png)
 
 ## Problema a solucionar:
 Existen demasiadas páginas con gran magintud de data, que puede abrumar al usuario y complicar su búsqueda de algo especifico que quieran encontrar, por eso planteamos crear una interfaz amigable e intuitiva, donde podrá encontrar datos exactos y satisfacer las necesidades del usuario.
@@ -89,6 +89,9 @@ Utilizamos este flujo de usuario con el protitipo creado en Figma para iterar co
 La paleta de colores aplicada fue la siguiente: 
 
 ![Paleta_de_colores](img_readme/paleta_de_colores_lol.jpg)
+
+De igual manera, se utilizo la app Zepplin, para organizar los elementos de diseño: 
+ ![out] (https://zpl.io/a7MXqGR)
 
 ## Resultados del test de usabilidad: 
 • El flujo fue entendible para los usuarios.
