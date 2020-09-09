@@ -25,7 +25,7 @@ Primero elegimos quienes serian nuestros ususarios, elaboramos entrevistas y enc
 ## Organización del Trabajo (planificación): (icono calendario)
  Para realizar nuestra planificación utilizamos _JIRA_  en donde estructuramos bien las tareas para cada historias de usuario y en cuantos springs lo entregariamos.
 
- (https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
+ ![out] (https://k60.kn3.net/taringa/2/7/6/9/4/7/52/sebayes/E44.gif)
 
 ## Entrevista y encuestas a usuarios:
 Las entrevistas que realizamos a nuestros usuarios se realizo por discord.
@@ -60,7 +60,7 @@ Para la construcción de las historias de usuario, se consideró las respuestas 
 
 El 53,3% jugaba partidas de tipo Normal:
 
-![partidas](img_readme/partidas.png)
+![partidas](img_readme/respuestas.png)
 
 El 80% llevaba jugando LoL menos de 1 año:
 
