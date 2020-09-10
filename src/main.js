@@ -37,14 +37,11 @@ const listaCampeones = (
   frontalcard.innerHTML += `    
     <a class="blog-card" id="${id}" href=" #openmodal${id}">
     
-    <img class="modal-img" src="${img}"/></a>
-    
-      
+      <img class="modal-img" src="${img}"/></a>
       <h1 class="frontalTextChamp" id="fontname">${name}</h1>
       <h2 class="frontalTextChamp" id="fonttitle">"${title}"</h2>
       <p class="frontalTextChamp" id="fontdificultad">Dificultad: ${difficulty}</p>
     
-   
     <section id="openmodal${id}" class="modal-window">
       <div class = "modal-content">
         <a href="#${id}" title="Close" class="modal-close">X</a>
