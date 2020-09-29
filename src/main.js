@@ -67,8 +67,8 @@ const listaCampeones = (
 
           <tr class="table">
             <th class="table"> Hp </th>
-            <td class="table">${hp}</td>
             <td class="table">${hpperlevel}</td>
+            <td class="table">${hp}</td>
             <td class="table">${stats(6, arrayCampeones, 1)}</td>
             <td class="table">${stats(12, arrayCampeones, 1)}</td>
             <td class="table">${stats(18, arrayCampeones, 1)}</td>
@@ -76,8 +76,8 @@ const listaCampeones = (
             
           <tr class="table">
             <th class="table"> MP </th>
-            <td class="table">${mp}</td>
             <td class="table">${mpperlevel}</td>
+            <td class="table">${mp}</td>
             <td class="table">${stats(6, arrayCampeones, 2)}</td>
             <td class="table">${stats(12, arrayCampeones, 2)}</td>
             <td class="table">${stats(18, arrayCampeones, 2)}</td>        
@@ -85,8 +85,8 @@ const listaCampeones = (
 
           <tr class="table">
             <th class="table"> Armor </th>
-            <td class="table">${armor}</td>
             <td class="table">${armorperlevel}</td>
+            <td class="table">${armor}</td>
             <td class="table">${stats(6, arrayCampeones, 3)}</td>
             <td class="table">${stats(12, arrayCampeones, 3)}</td>
             <td class="table">${stats(18, arrayCampeones, 3)}</td>
@@ -94,8 +94,8 @@ const listaCampeones = (
           
           <tr class="table">
             <th class="table"> Spellblock </th>
-            <td class="table">${spellblock}</td>
             <td class="table">${spellblockperlevel}</td>
+            <td class="table">${spellblock}</td>
             <td class="table">${stats(6, arrayCampeones, 4)}</td>
             <td class="table">${stats(12, arrayCampeones, 4)}</td>
             <td class="table">${stats(18, arrayCampeones, 4)}</td>
@@ -103,8 +103,8 @@ const listaCampeones = (
             
           <tr class="table">
             <th class="table"> Hpregen </th>
-            <td class="table">${hpregen}</td>
             <td class="table">${hpregenperlevel}</td>
+            <td class="table">${hpregen}</td>
             <td class="table">${stats(6, arrayCampeones, 5)}</td>
             <td class="table">${stats(12, arrayCampeones, 5)}</td>
             <td class="table">${stats(18, arrayCampeones, 5)}</td>
@@ -272,8 +272,8 @@ const buscador = () => {
   
         <tr class="table_Reverse">
           <th class="table_Reverse"> Hp </th>
-          <td class="table_Reverse">${campeones.stats.hp}</td>
           <td class="table_Reverse">${campeones.stats.hpperlevel}</td>
+          <td class="table_Reverse">${campeones.stats.hp}</td>
           <td class="table_Reverse">${stats(6, arrayCampeones, 1)}</td>
           <td class="table_Reverse">${stats(12, arrayCampeones, 1)}</td>
           <td class="table_Reverse">${stats(18, arrayCampeones, 1)}</td>
@@ -281,8 +281,8 @@ const buscador = () => {
   
         <tr class="table_Reverse">
           <th class="table_Reverse"> MP </th>
-          <td class="table_Reverse">${campeones.stats.mp}</td>
           <td class="table_Reverse">${campeones.stats.mpperlevel}</td>
+          <td class="table_Reverse">${campeones.stats.mp}</td>
           <td class="table_Reverse">${stats(6, arrayCampeones, 2)}</td>
           <td class="table_Reverse">${stats(12, arrayCampeones, 2)}</td>
           <td class="table_Reverse">${stats(18, arrayCampeones, 2)}</td>
@@ -290,8 +290,8 @@ const buscador = () => {
   
         <tr class="table_Reverse">
           <th class="table_Reverse"> Armor </th>
-          <td class="table_Reverse">${campeones.stats.armor}</td>
           <td class="table_Reverse">${campeones.stats.armorperlevel}</td>
+          <td class="table_Reverse">${campeones.stats.armor}</td>
           <td class="table_Reverse">${stats(6, arrayCampeones, 3)}</td>
           <td class="table_Reverse">${stats(12, arrayCampeones, 3)}</td>
           <td class="table_Reverse">${stats(18, arrayCampeones, 3)}</td>
@@ -299,8 +299,8 @@ const buscador = () => {
   
         <tr class="table_Reverse">
           <th class="table_Reverse"> Spellblock </th>
-          <td class="table_Reverse">${campeones.stats.spellblock}</td>
           <td class="table_Reverse">${campeones.stats.spellblockperlevel}</td>
+          <td class="table_Reverse">${campeones.stats.spellblock}</td>
           <td class="table_Reverse">${stats(6, arrayCampeones, 4)}</td>
           <td class="table_Reverse">${stats(12, arrayCampeones, 4)}</td>
           <td class="table_Reverse">${stats(18, arrayCampeones, 4)}</td>
@@ -308,8 +308,8 @@ const buscador = () => {
   
         <tr class="table_Reverse">
           <th class="table_Reverse"> Hpregen </th>
-          <td class="table_Reverse">${campeones.stats.hpregen}</td>
           <td class="table_Reverse">${campeones.stats.hpregenperlevel}</td>
+          <td class="table_Reverse">${campeones.stats.hpregen}</td>
           <td class="table_Reverse">${stats(6, arrayCampeones, 5)}</td>
           <td class="table_Reverse">${stats(12, arrayCampeones, 5)}</td>
           <td class="table_Reverse">${stats(18, arrayCampeones, 5)}</td>

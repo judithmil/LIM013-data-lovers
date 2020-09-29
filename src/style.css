@@ -75,6 +75,7 @@ video {
   display: flex;
   width: 98%;
   margin: 1rem 1rem 1rem 1rem;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1%;
 }
@@ -82,16 +83,19 @@ video {
 .figure {
   margin: 0rem 0rem 0rem 0rem;
 }
+.logo-bar{
+display: flex;
+flex-flow: nowrap;
+margin-left:15%;
+}
 .logoHome {
-  margin: 1rem 1rem 1rem 1rem;
-  height: auto;
-  top: 50%;
   position: relative;
+  margin-right: 2rem;
   vertical-align: middle;
 }
 
 .imghome {
-  width: 100%;
+  width: 90%;
 }
 
 .imghome:hover {
@@ -99,15 +103,14 @@ video {
   box-shadow: inset 0 0 1.25rem #feb412, 0 0 1.25rem #feb412;
 }
 .cornerBar {
-  width: 70%;
+  width: 600px;
   padding: 0.3125rem;
-  margin: 2rem 2rem 2rem 2rem;
   border: #a87e3e 0.09rem solid;
   border-radius: 1.875rem 0rem 1.875rem 0rem;
 }
 .cornerPlay {
   padding: 0.3125rem;
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   border: #a87e3e 0.09rem solid;
   border-radius: 1.875rem 0rem 1.875rem 0rem;
   width: 18%;
@@ -189,6 +192,10 @@ video {
 .child1 {
   width: 100%;
 }
+.playlist{
+  margin: 2rem auto;
+  text-align: center;
+}
 .container-box {
   background-color: rgba(10, 3, 3, 0.404);
   height: auto;
@@ -253,7 +260,7 @@ video {
 .mode-play h2 {
   background-color: #bba341;
   align-items: normal;
-  margin: 0rem 0rem 1rem 4rem;
+  margin: 0rem auto 1rem auto;
   width: 90%;
   top: 80%;
   border-radius: 0px 25px;
@@ -332,9 +339,9 @@ video {
 .numbertext {
   color: #bba341;
   font-size: 16px;
-  padding: 8px 10px;
-  position: relative;
-  top: 0;
+  position: absolute;
+  left: 5px;
+  top: 0px;
 }
 #dot1,
 #dot2,
@@ -402,7 +409,7 @@ video {
 .video-container h2 {
   background-color: #bba341;
   align-items: normal;
-  margin: 0rem 0rem 0rem 4rem;
+  margin: 0rem auto 1rem auto;
   width: 90%;
   border-radius: 0px 25px;
   padding: 1%;
@@ -452,9 +459,11 @@ video {
   box-shadow: 0 0 1.25rem #feb412, 0 0 1.25rem #feb412;
 }
 footer {
+  position: relative;
   width: 100%;
   margin-top: 10px;
   padding-top: 10px;
+  bottom:0px;
 }
 .footer {
   display: flex;
@@ -615,10 +624,10 @@ footer {
   border-radius: 0px 20px;
 }
 .card-link:hover figure {
-  -webkit-transform: perspective(200px) rotateY(180deg);
-  -ms-transform: perspective(200px) rotateY(180deg);
-  -o-transform: perspective(200px) rotateY(180deg);
-  transform: perspective(200px) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform:  rotateY(180deg);
+  -o-transform:  rotateY(180deg);
+  transform:  rotateY(180deg);
 }
 .frontalCard {
   text-align: center;
@@ -656,7 +665,7 @@ figure .traseraTop {
   width: 100%;
   top: 0;
   height: 100%;
-  transform: perspective(150px) rotateY(180deg);
+  transform:  rotateY(180deg);
   backface-visibility: hidden;
   overflow: auto;
   background: rgb(252, 252, 248, 0.7);
@@ -753,14 +762,14 @@ figure .traseraTop .post-title {
 .line {
   height: 70%;
   align-self: center;
-  border-left: 0.0625rem solid #a87e3e;
+  border-left: 0.0625rem solid #986E1E;
 }
 
 .all {
   background-color: rgb(218, 213, 213);
   font-size: 1.5625rem;
   border: none;
-  color: #ab8347;
+  color: #986E1E;
   font-family: "Marcellus SC", serif;
   outline: none;
 }
@@ -770,14 +779,14 @@ figure .traseraTop .post-title {
 }
 
 #searchInput:hover {
-  color: #a87e3e;
-  font-size: 1.5625rem;
+  color: #96812C;
+ 
   border: none;
   text-shadow: 0.0625rem 0.0625rem 0.5rem #ddc433, 0 0 1em #ddc433,
     0 0 0.2em #ddc433;
 }
 #searchInput::placeholder {
-  color: #a87e3e;
+  color: #986E1E;
   padding-right: 0.3125rem;
 }
 #searchInput ::placeholder:hover {
@@ -786,7 +795,7 @@ figure .traseraTop .post-title {
 #searchInput {
   border: 0;
   width: 130px;
-  color: #a87e3e;
+  color: #986E1E;
   font-size: 1.5rem;
   font-family: "Marcellus SC", serif;
   background-color: rgb(218, 213, 213);
@@ -800,7 +809,7 @@ figure .traseraTop .post-title {
 #order {
   border: none;
   background-color: rgb(218, 213, 213);
-  color: #a87e3e;
+  color: #986E1E;
   font-size: 1.5625rem;
   font-family: "Marcellus SC", serif;
 }
@@ -813,7 +822,7 @@ figure .traseraTop .post-title {
 
 .orderClass {
   background-color: rgb(218, 213, 213);
-  color: #a87e3e;
+  color: #986E1E;
   font-family: "Marcellus SC", serif;
   outline: none;
 }
@@ -826,7 +835,7 @@ figure .traseraTop .post-title {
 #orderDifficulty {
   border: none;
   background-color: rgb(218, 213, 213);
-  color: #a87e3e;
+  color: #986E1E;
   font-size: 1.5625rem;
   font-family: "Marcellus SC", serif;
   outline: none;
@@ -839,7 +848,7 @@ figure .traseraTop .post-title {
 }
 .orderDifficulty {
   background-color: rgb(218, 213, 213);
-  color: #a87e3e;
+  color: #986E1E;
   font-size: 1.5625rem;
   font-family: "Marcellus SC", serif;
 }
@@ -1013,6 +1022,7 @@ figure .traseraTop .post-title {
   right: 2%;
   top: 2%;
   font-size: 90%;
+  z-index: 90;
   text-decoration: none;
 }
 
@@ -1134,7 +1144,8 @@ th {
   display: relative;
   justify-content: space-evenly;
   list-style: none;
-  width: 30%;
+  width: 100%;
+  max-width: 450px;
   padding: 1% 1% 1% 1%;
   background: rgba(0, 0, 0, 0.67);
   margin: 2.5% 0 2.5% 0;
@@ -1246,6 +1257,7 @@ th {
   position: absolute;
   right: 2%;
   top: 2%;
+  z-index: 90;
   font-size: 200%;
   text-decoration: none;
 }
@@ -1374,37 +1386,38 @@ th {
     width: 90%;
   }
   .figure {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: auto;
   }
   .title-lol {
     width: 60%;
-    margin: 1rem 1rem 1rem 3rem;
   }
   .menus {
     width: 100%;
     position: relative;
-
     display: block;
     margin: 1rem 1rem 1rem -1rem;
   }
-  .logoHome {
-    width: 100%;
-    top: 40%;
-    margin: 1rem 1rem 1rem 1rem;
+ 
+  .logo-bar{
+    align-items: center;
+    text-align: center;
   }
   .imghome {
-    width: 15%;
-    margin: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    margin: 0rem 0rem;
+    min-width: 20px;
   }
   .menu-bar a {
-    font-size: 72%;
+    font-size: 60%;
     align-items: center;
     line-height: 100%;
+    margin: 10px 3px;
+    width: auto;
   }
   .menu-bar {
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0rem 0rem 0rem 0rem;
-    width: auto;
+    border-radius: 15px 0px;
   }
   .menu-play a {
     font-size: 100%;
@@ -1412,15 +1425,18 @@ th {
   }
   .menu-play {
     width: auto;
+    border-radius: 17px 0px;
   }
   .cornerPlay {
     width: 50%;
     font-size: 83%;
-    margin: 1rem 2rem 1rem 5rem;
+    margin: 0.5rem 2rem 1rem 5rem;
+    border-radius: 17px 0px;
   }
   .cornerBar {
-    margin: 1rem 2rem 1rem 1rem;
-    width: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 300px;
+    border-radius: 15px 0px;
   }
   /*blque de texto y videos*/
   .home {
@@ -1431,8 +1447,7 @@ th {
   .container-box {
     display: block;
     position: relative;
-
-    width: 87%;
+    width: 90%;
     margin: 1rem 1rem 1rem 1rem;
   }
   .container-box p {
@@ -1455,14 +1470,14 @@ th {
   }
   .mode-play h2 {
     font-size: 100%;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem auto 1rem auto;
   }
   .dot-chain {
     width: 100%;
   }
   .video-container h2 {
     font-size: 100%;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem auto 1rem auto;
   }
 
   .lol-video {
@@ -1472,10 +1487,7 @@ th {
 }
 @media only screen and (min-width: 301px) and (max-width: 700px) {
   .title-lol {
-    display: block;
-    margin: 1rem 0rem 1rem 3rem;
     width: 73%;
-    height: auto;
   }
   .menus {
     position: relative;
@@ -1483,18 +1495,22 @@ th {
     margin: 1rem 1rem 1rem 0rem;
     width: 100%;
  }
-  .logoHome {
-    width: 100%;
-    margin: 1rem 1rem 1rem 0rem;
-  }
 
   .figure {
-    margin: 0rem 0rem 0rem 0rem;
+    margin: auto;
+  }
+  .logo-bar{
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
   }
   .imghome {
-    width: 13%;
-    top: 40%;
-    margin: 1em 1em 1em 1em;
+    width: 100%;
+    margin:0rem;
+    min-width: 50px;
+  }
+  .logoHome{
+    margin: 0 0.5rem;
   }
   .menu-bar a {
     font-size: 100%;
@@ -1515,7 +1531,7 @@ th {
   }
   .cornerPlay {
     width: 55%;
-    margin: 0rem 0rem 0rem 4rem;
+    margin: 0 auto;
     align-items: center;
   }
   .cornerBar {
@@ -1524,14 +1540,14 @@ th {
   }
   .mode-play h2 {
     font-size: 100%;
-    margin: 1rem 1rem 1rem 1.5rem;
+    margin: 0rem auto 1rem auto;
   }
   .dot-chain {
     width: 100%;
   }
   .video-container h2 {
     font-size: 100%;
-    margin: 0rem 0rem 0rem 1.5rem;
+    margin: 0rem auto 1rem auto;
   }
   /*bloque de texto y videos*/
   .home {
@@ -1752,28 +1768,29 @@ th {
     flex-flow: wrap;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 767px) {
+@media only screen and (min-width: 701px) and (max-width: 768px) {
   .title-lol {
     display: block;
     margin: auto;
     width: 68%;
-    height: auto;
   }
   .menus {
     width: 100%;
     position: relative;
-
     display: block;
-    margin: 1rem 0rem 1rem -3rem;
+    margin: 1rem 1rem 1rem 0rem;
   }
   .logoHome {
-    width: 35%;
-    margin: 1rem 1rem -5rem -6rem;
+    margin: 0 0.5rem;
+  }
+  .logo-bar{
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
   }
   .imghome {
-    width: 26%;
-    top: 40%;
-    margin: -1em 1em 1em 7em;
+    width: 90%;
+    margin: 0rem;
   }
   .menu-bar a {
     font-size: 171%;
@@ -1793,20 +1810,45 @@ th {
   }
   .cornerPlay {
     width: 41%;
-    margin: 0rem 0rem 0rem 13rem;
+    margin: 1rem auto;
   }
   .cornerBar {
-    margin: 1rem 4rem 1rem 6rem;
+    margin: 0;
     width: 83%;
   }
   .container-box {
     position: relative;
+    width: 98%;
   }
   .home {
     position: relative;
+    margin: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
   }
   .modos {
-    position: relative;
+    display: block;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    /* position: relative; */
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .modo-juego h2 {
+    margin: 1rem auto;
+  }
+  .lol-video {
+    margin: 1rem 1rem 1rem -1rem;
+    width: 100%;
+  }
+  .contenedor-video {
+    margin: 1rem 1rem 1rem 1rem;
+    width: 100%;
+  }
+  .video-container h2 {
+    margin: 0rem auto 1rem auto;
+    width: 90%;
   }
 }
 @media (max-width: 767px) {
@@ -1822,24 +1864,27 @@ th {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .title-lol {
-    min-width: 40%;
-    max-width: 70%;
+    display: block;
+    margin: auto;
+    width: 68%;
   }
   .menus {
     width: 100%;
     position: relative;
-
     display: block;
     margin: 1em 1em 1em 1em;
   }
+  .logo-bar{
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
   .logoHome {
-    width: 100%;
-    margin: 1rem 2rem 1rem 0rem;
+    margin: 0 1rem;
   }
   .imghome {
-    width: 10%;
-    top: 40%;
-    margin: 1em 1em 0em 1em;
+    width: 90%;
+    margin: 0;
   }
   .menu-bar a {
     font-size: 170%;
@@ -1861,7 +1906,7 @@ th {
   }
   .cornerPlay {
     width: 30%;
-    margin: 1rem 5rem 1rem 15rem;
+    margin: 1rem auto;
     position: relative;
   }
   .cornerBar {
@@ -1888,7 +1933,7 @@ th {
     flex-flow: wrap;
   }
   .modo-juego h2 {
-    margin: 1rem 0rem 1rem 4rem;
+    margin: 1rem auto;
   }
   .lol-video {
     margin: 1rem 1rem 1rem -1rem;
@@ -1899,7 +1944,7 @@ th {
     width: 100%;
   }
   .video-container h2 {
-    margin: 0rem 0rem 0rem 3rem;
+    margin: 0rem auto 1rem auto;
     width: 90%;
   }
 }
@@ -1989,16 +2034,7 @@ th {
     width: 80%;
     margin: auto;
   }
-  #fontname {
-    /* se hizo hoy 3/9*/
-    font-size: 12pt;
-  }
-  #fonttitle {
-    font-size: 5pt;
-  }
-  #fontdificultad {
-    font-size: 5pt;
-  }
+
   .texto-champ p {
     width: 90%;
   }
@@ -2031,5 +2067,21 @@ th {
 @media (max-width: 910px) {
   .texto-top5 p {
     max-width: 90%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  #container-campeones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #fontname {
+    /*se hizo 3/9---se quito font-size arriba*/
+    font-size: 80%;
+  }
+  #fonttitle {
+    font-size: 50%;
+  }
+  #fontdificultad {
+    font-size: 50%;
   }
 }
